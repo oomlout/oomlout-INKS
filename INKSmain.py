@@ -37,7 +37,7 @@ def INKSgeneratePDFs(iLocation, directoryName, filter):
 			#time.sleep(1)
 
 			#make +01 etc okay (fails if more than 10 images
-			print f
+			#print f
 			if type.lower() in ".svg" and filter in f:
 				print "    Generating pdf File: " + f 
 				execLine = iLocation + " -f " + '"' + fullName + '" -A "' + fullName.split(".")[0] + '.pdf"'
